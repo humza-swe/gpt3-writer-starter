@@ -6,8 +6,6 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-
-;
 const generateAction = async (req, res) => {
   console.log(`API: ${basePromptPrefix}${req.body.userInput}`)
   const basePromptPrefix = 
@@ -21,7 +19,7 @@ const generateAction = async (req, res) => {
     model: 'text-davinci-003',
     prompt: `${basePromptPrefix}${req.body.userInput}\n`,
     temperature: 0.7,
-    max_tokens: 750
+    max_tokens: 750,
   });
   
   const basePromptOutput = baseCompletion.data.choices.pop();
