@@ -45,7 +45,7 @@ const callGenerateEndpoint = async () => {
             <h1>Generate a tweet thread about your research work.</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Your research truly is meaningless unless its understandable by the general public. Write a few short sentences about your work, we'll give you a ready to use Twitter thread - all generated using AI.</h2>
+            <h2>Your research truly is meaningless unless its understandable by the general public. Write the title of your thesis topic, we'll give you a ready to use Twitter thread - all generated using AI.</h2>
           </div>
         </div>
 
