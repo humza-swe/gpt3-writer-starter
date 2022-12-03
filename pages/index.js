@@ -17,7 +17,6 @@ const callGenerateEndpoint = async () => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Accept':'application/json'
     },
     body: JSON.stringify({ userInput }),
   });
@@ -43,10 +42,10 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Generate a tweet thread about your research work.</h1>
+            <h1>AI Twitter Thread Generator.</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Your research truly is meaningless unless its understandable by the general public. Write the title of your thesis topic, we'll give you a ready to use Twitter thread - all generated using AI.</h2>
+            <h2>Sup, bro. Type in the title of your research project and see what happens.</h2>
           </div>
         </div>
 
@@ -93,7 +92,6 @@ const callGenerateEndpoint = async () => {
           rel="noreferrer"
         >
           <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
             <p>powered by NiftyToken</p>
           </div>
         </a>
