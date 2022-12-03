@@ -42,10 +42,10 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>AI Twitter Thread Generator.</h1>
+            <h1>AI Twitter Thread Generator</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Sup, bro. Type in the title of your research project and see what happens.</h2>
+            <h2>Hey! Type in the title of your research project and see what happens.</h2>
           </div>
         </div>
 
@@ -92,7 +92,7 @@ const callGenerateEndpoint = async () => {
           rel="noreferrer"
         >
           <div className="badge">
-            <p>powered by NiftyToken</p>
+           
           </div>
         </a>
       </div>
