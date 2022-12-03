@@ -7,7 +7,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 const basePromptPrefix = 
 `
-Write me a detailed Twitter thread in the style of Sahil Bloom about a PhD project with the title below. Avoid scientific jargon and make it sound cool.
+Write me a detailed Twitter thread in the style of Sahil Bloom about a scientific research project with the title below. Avoid scientific jargon and make it sound cool. Don't mention Sahil's name.
 Title:
 `
 
