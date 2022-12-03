@@ -42,10 +42,10 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>AI Twitter Thread Generator</h1>
+            <h1>AI-based Twitter Thread Generator</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Hey! Type in the title of your research project and see what happens.</h2>
+            <h2>type in the title of your research project and see what happens.</h2>
           </div>
         </div>
 
@@ -85,17 +85,7 @@ const callGenerateEndpoint = async () => {
 
 
       </div>
-      <div className="badge-container grow">
-        <a
-          href="https://buildspace.so/builds/ai-writer"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="badge">
-           
-          </div>
-        </a>
-      </div>
+      
     </div>
   );
 };
