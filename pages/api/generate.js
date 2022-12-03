@@ -5,14 +5,15 @@ const configuration = new Configuration({
 });
 
 const openai = new OpenAIApi(configuration);
+const basePromptPrefix = 
+`
+Write me a detailed Twitter thread in the style of Sahil Bloom with the title below. Please make sure to avoid complex words and scientific jargon. 
+Title:
+`
 
 const generateAction = async (req, res) => {
   console.log(`API: ${basePromptPrefix}${req.body.userInput}`)
-  const basePromptPrefix = 
-  `
-  Write me a detailed Twitter thread in the style of Sahil Bloom with the title below. Please make sure to avoid complex words and scientific jargon. 
-  Title:
-  `
+
   console.log(`API: ${basePromptPrefix}`)
   
   const baseCompletion = await openai.createCompletion({

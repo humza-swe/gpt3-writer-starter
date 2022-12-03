@@ -7,7 +7,7 @@ const Home = () => {
   const [userInput, setUserInput ] = useState('');
 
   const [apiOutput, setApiOutput] = useState('')
-const [isGenerating, setIsGenerating] = useState(false)
+  const [isGenerating, setIsGenerating] = useState(false)
 
 const callGenerateEndpoint = async () => {
   setIsGenerating(true);
@@ -17,6 +17,7 @@ const callGenerateEndpoint = async () => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
+      'Accept':'application/json'
     },
     body: JSON.stringify({ userInput }),
   });
