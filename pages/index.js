@@ -34,7 +34,7 @@ const callGenerateEndpoint = async () => {
       setUserInput(event.target.value);
   };
 
-  const placeholderValue = "Problem:\nAge:\nEthnicity:\nGender:\nHeight:\nWeight:\nHistory:"
+  const placeHolderValue = "Problem:\nAge:\nEthnicity:\nGender:\nHeight:\nWeight:\nHistory:"
   
   return (
     <div className="root">
@@ -47,7 +47,9 @@ const callGenerateEndpoint = async () => {
             <h1>triage.ai</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Enter your information below. Use AI to plan the response to your medical issue. *Disclaimer: Please see a healthcare provider*</h2>
+            <h2>Enter your information below. Use AI to plan the response to your medical issue. 
+              
+              *Disclaimer: Please see a healthcare provider*</h2>
           </div>
         </div>
 
@@ -64,7 +66,7 @@ const callGenerateEndpoint = async () => {
     onClick={callGenerateEndpoint}
   >
     <div className="generate">
-    {isGenerating ? <span class="loader"></span> : <p>Generate</p>}
+    {isGenerating ? <span class="loader"></span> : <p>Generate Diagnosis</p>}
     </div>
   </a>
 </div>
