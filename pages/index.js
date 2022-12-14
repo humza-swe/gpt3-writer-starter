@@ -47,9 +47,8 @@ const callGenerateEndpoint = async () => {
             <h1>triage.ai</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Enter your information below. Use AI to plan the response to your medical issue. 
-              
-              *Disclaimer: Please see a healthcare provider*</h2>
+            <h2>Enter your information below. Use AI to plan the response to your medical issue. </h2>
+            <h3>*Disclaimer: Please see a healthcare provider. This tool is meant to be for informational purposes only.*</h3>
           </div>
         </div>
 
@@ -59,14 +58,20 @@ const callGenerateEndpoint = async () => {
         className="prompt-box"
         value={userInput}
         onChange={onUserChangedText}
+        rows="10"
+        cols="50"
+        readOnly={false}
       />
- <div className="prompt-buttons">
+
+      <div className="placeholder-text" style={{position:"relative"}}>{placeHolderValue</div>
+
+<div className="prompt-buttons">
   <a
     className={isGenerating ? 'generate-button loading' : 'generate-button'}
     onClick={callGenerateEndpoint}
   >
     <div className="generate">
-    {isGenerating ? <span class="loader"></span> : <p>Generate Diagnosis</p>}
+    {isGenerating ? <span class="loader"></span> : <p>Diagnose</p>}
     </div>
   </a>
 </div>
