@@ -31,9 +31,12 @@ const callGenerateEndpoint = async () => {
 
   const onUserChangedText = (event) => {
       console.log(event.target.value);
-      setUserInput(event.target.value);
+      setUserInput(event.target.value.replace(/Problem:|Age:|Ethnicity:|Gender:|Height:|Weight:|History:/g, '\n'));
+  };
   };
 
+
+  
   return (
     <div className="root">
       <Head>
@@ -53,11 +56,17 @@ const callGenerateEndpoint = async () => {
 	    <textarea 
         placeholder="
         Problem:
+
         Age:
+
         Ethnicity:
+
         Gender:
+
         Height:
+
         Weight:
+
         History:
         " 
         className="prompt-box"
