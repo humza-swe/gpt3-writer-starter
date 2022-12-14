@@ -33,7 +33,6 @@ const callGenerateEndpoint = async () => {
       console.log(event.target.value);
       setUserInput(event.target.value.replace(/Problem:|Age:|Ethnicity:|Gender:|Height:|Weight:|History:/g, '\n'));
   };
-  };
 
 
   
