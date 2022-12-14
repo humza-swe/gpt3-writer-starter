@@ -44,7 +44,7 @@ const callGenerateEndpoint = async () => {
           <div className="header-title">
             <h1>triage.ai</h1>
           </div>
-          <div className="header-subtitle" style="text-align:center">
+          <div className="header-subtitle">
             <h2>Enter your information below. Use AI to plan the response to your medical issue. </h2>
             <h3>Disclaimer: Please see a healthcare provider. This tool is meant to be for informational purposes only.</h3>
           </div>
@@ -83,7 +83,7 @@ const callGenerateEndpoint = async () => {
         <h3>Output</h3>
       </div>
     </div>
-    <div className="output-content" style="text-align:left">
+    <div className="output-content">
       <p>{apiOutput}</p>
     </div>
   </div>
