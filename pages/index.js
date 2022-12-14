@@ -56,7 +56,7 @@ const callGenerateEndpoint = async () => {
         className="prompt-box"
         value={userInput || placeHolderValue}
         onChange={onUserChangedText}
-        rows="20"
+        rows="40"
         cols="60"
         readOnly={false}
       />
