@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
+//import buildspaceLogo from '../assets/buildspace-logo.png';
 import { useState } from 'react';
 
 const Home = () => {
@@ -37,21 +37,29 @@ const callGenerateEndpoint = async () => {
   return (
     <div className="root">
       <Head>
-        <title>Twitter Thread Generator</title>
+        <title>triage</title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>AI-based Twitter Thread Generator</h1>
+            <h1>triage.ai</h1>
           </div>
           <div className="header-subtitle">
-            <h2>type in the title of your research project and see what happens.</h2>
+            <h2>Enter your information below. Use AI to plan the response to your medical issue. *Disclaimer: Please see a healthcare provider*</h2>
           </div>
         </div>
 
 	  <div className="prompt-container">
 	    <textarea 
-        placeholder="start typing here" 
+        placeholder="
+        Problem:
+        Age:
+        Ethnicity:
+        Gender:
+        Height:
+        Weight:
+        History:
+        " 
         className="prompt-box"
         value={userInput}
         onChange={onUserChangedText}
