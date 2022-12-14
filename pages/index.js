@@ -63,7 +63,7 @@ const callGenerateEndpoint = async () => {
         readOnly={false}
       />
 
-      <div className="placeholder-text" style={{position:"relative"}}>{placeHolderValue</div>
+      <div className="placeholder-text" style={{position:"relative"}}>{placeHolderValue}</div>
 
 <div className="prompt-buttons">
   <a
