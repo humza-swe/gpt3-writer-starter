@@ -56,15 +56,15 @@ const callGenerateEndpoint = async () => {
 	    <textarea 
         placeholder={placeHolderValue}
         className="prompt-box"
-        value={userInput}
+        value={userInput || placeHolderValue}
         onChange={onUserChangedText}
-        rows="15"
+        rows="20"
         cols="50"
         readOnly={false}
       />
 
       <div className="placeholder-text" style={{position:"relative"}}>
-        {userInput == "" ? placeHolderValue: userInput}
+        {userInput || placeHolderValue}
         </div>
 
 <div className="prompt-buttons">
