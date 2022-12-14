@@ -48,7 +48,7 @@ const callGenerateEndpoint = async () => {
           </div>
           <div className="header-subtitle">
             <h2>Enter your information below. Use AI to plan the response to your medical issue. </h2>
-            <h3>*Disclaimer: Please see a healthcare provider. This tool is meant to be for informational purposes only.*</h3>
+            <h3>Disclaimer: Please see a healthcare provider. This tool is meant to be for informational purposes only.</h3>
           </div>
         </div>
 
@@ -58,12 +58,14 @@ const callGenerateEndpoint = async () => {
         className="prompt-box"
         value={userInput}
         onChange={onUserChangedText}
-        rows="10"
+        rows="15"
         cols="50"
         readOnly={false}
       />
 
-      <div className="placeholder-text" style={{position:"relative"}}>{placeHolderValue}</div>
+      <div className="placeholder-text" style={{position:"relative"}}>
+        {userInput == "" ? placeHolderValue: userInput}
+        </div>
 
 <div className="prompt-buttons">
   <a
