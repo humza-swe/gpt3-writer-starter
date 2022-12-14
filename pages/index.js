@@ -1,11 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-//import buildspaceLogo from '../assets/buildspace-logo.png';
 import { useState } from 'react';
 
 const Home = () => {
   const [userInput, setUserInput ] = useState('');
-
   const [apiOutput, setApiOutput] = useState('')
   const [isGenerating, setIsGenerating] = useState(false)
 
@@ -46,7 +44,7 @@ const callGenerateEndpoint = async () => {
           <div className="header-title">
             <h1>triage.ai</h1>
           </div>
-          <div className="header-subtitle">
+          <div className="header-subtitle" style="text-align:center">
             <h2>Enter your information below. Use AI to plan the response to your medical issue. </h2>
             <h3>Disclaimer: Please see a healthcare provider. This tool is meant to be for informational purposes only.</h3>
           </div>
@@ -59,7 +57,7 @@ const callGenerateEndpoint = async () => {
         value={userInput || placeHolderValue}
         onChange={onUserChangedText}
         rows="20"
-        cols="50"
+        cols="60"
         readOnly={false}
       />
 
@@ -85,16 +83,12 @@ const callGenerateEndpoint = async () => {
         <h3>Output</h3>
       </div>
     </div>
-    <div className="output-content">
+    <div className="output-content" style="text-align:left">
       <p>{apiOutput}</p>
     </div>
   </div>
   )}
-
       </div>
-
-
-
       </div>
       
     </div>
