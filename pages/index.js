@@ -32,21 +32,20 @@ const callGenerateEndpoint = async () => {
       setUserInput(event.target.value);
   };
 
-  const placeHolderValue = "Problem:\nAge:\nEthnicity:\nGender:\nHeight:\nWeight:\nHistory:"
-  
+  const placeHolderValue = "Describe your radiation safety situation here."
   return (
     <div className="root">
       <Head>
-        <title>triage</title>
+        <title>RSO_AI</title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>triage.ai</h1>
+            <h1>RSO_AI</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Enter your information below. Use AI to plan the response to your medical issue. </h2>
-            <h3>Disclaimer: Please see a healthcare provider. This tool is meant to be for informational purposes only.</h3>
+            <h2>Enter your radiation safety situation details below and the RSO's AI Assistnat will help. </h2>
+            <h3>Disclaimer: This is a fictional tool developed for BP8107 (W2023). This tool is meant to be for informational purposes only.</h3>
           </div>
         </div>
 
@@ -56,14 +55,9 @@ const callGenerateEndpoint = async () => {
         className="prompt-box"
         value={userInput || placeHolderValue}
         onChange={onUserChangedText}
-        rows="40"
-        cols="60"
         readOnly={false}
       />
 
-      <div className="placeholder-text" style={{position:"relative"}}>
-        {userInput || placeHolderValue}
-        </div>
 
 <div className="prompt-buttons">
   <a
