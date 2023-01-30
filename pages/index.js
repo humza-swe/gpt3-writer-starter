@@ -36,7 +36,7 @@ const callGenerateEndpoint = async () => {
   return (
     <div className="root">
       <Head>
-        <title>RSO_AI</title>
+        <title>Radiation Safety Assistant</title>
       </Head>
       <div className="container">
         <div className="header">
@@ -44,7 +44,7 @@ const callGenerateEndpoint = async () => {
             <h1>RSO_AI</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Enter your radiation safety situation details below and the RSO's AI Assistnat will help. </h2>
+            <h2>Enter your radiation safety situation details below and the RSO's AI Assistant will help. </h2>
             <h3>Disclaimer: This is a fictional tool developed for BP8107 (W2023). This tool is meant to be for informational purposes only.</h3>
           </div>
         </div>
@@ -65,7 +65,7 @@ const callGenerateEndpoint = async () => {
     onClick={callGenerateEndpoint}
   >
     <div className="generate">
-    {isGenerating ? <span class="loader"></span> : <p>Diagnose</p>}
+    {isGenerating ? <span class="loader"></span> : <p>AI magic!</p>}
     </div>
   </a>
 </div>
