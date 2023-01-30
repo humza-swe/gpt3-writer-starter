@@ -53,9 +53,9 @@ const callGenerateEndpoint = async () => {
 	    <textarea 
         placeholder={placeHolderValue}
         className="prompt-box"
-        value={userInput || placeHolderValue}
+        value={userInput}
         onChange={onUserChangedText}
-        readOnly={true}
+        readOnly={false}
       />
 
 
