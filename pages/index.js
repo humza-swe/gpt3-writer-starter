@@ -41,7 +41,7 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>RSO_AI</h1>
+            <h1>Radiation Safety Assistant</h1>
           </div>
           <div className="header-subtitle">
             <h2>Enter your radiation safety situation details below and the RSO's AI Assistant will help. </h2>
@@ -55,7 +55,7 @@ const callGenerateEndpoint = async () => {
         className="prompt-box"
         value={userInput || placeHolderValue}
         onChange={onUserChangedText}
-        readOnly={false}
+        readOnly={true}
       />
 
 
@@ -65,7 +65,7 @@ const callGenerateEndpoint = async () => {
     onClick={callGenerateEndpoint}
   >
     <div className="generate">
-    {isGenerating ? <span class="loader"></span> : <p>AI magic!</p>}
+    {isGenerating ? <span class="loader"></span> : <p>Assist</p>}
     </div>
   </a>
 </div>
