@@ -44,8 +44,8 @@ const callGenerateEndpoint = async () => {
             <h1>AI Veterinarian</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Enter your pet's situation below. Be as descriptive as possible and let AI work its magic. </h2>
-            <h3>Disclaimer: This tool is meant to be for informational purposes only.</h3>
+            <h3>Enter your pet's situation below. Be as descriptive as possible and let AI work its magic. </h3>
+            <h2>Disclaimer: This tool is meant to be for informational purposes only.</h2>
           </div>
         </div>
 
@@ -78,7 +78,7 @@ const callGenerateEndpoint = async () => {
       </div>
     </div>
     <div className="output-content">
-      <p>{apiOutput}</p>
+      <h2><p>{apiOutput}</p></h2>
     </div>
   </div>
   )}
