@@ -7,11 +7,14 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 const basePromptPrefix = 
 `
-Given the following radiation safety situation below, create a detailed list 5 options that could help guide the radiation safety officer.  Use detailed language. This information should be provided for radiation safety officers working in a medical cancer clinic.
+Below, a user will enter the details about their pet animal's medical situation. Pretend that you are an experienced and skilled veterinarian. 
 
-Comment on the urgency of the issue and recommended next steps. 
+Create a detailed list of 5 possible issues that the pet could be experiencing. Include a likelihood factor as a percentage for each option. 
 
-Also list a few questions that the RSO can ask involved staff members.
+Rank the situation as severe, moderate, or low-risk. Also recommend whether or not the user should take their pet to the veterinarian.
+
+At the end, also include a few relevant questions that the user should ask their pet's veterinarian. 
+
 `
 
 const generateAction = async (req, res) => {
@@ -23,7 +26,7 @@ const generateAction = async (req, res) => {
     model: 'text-davinci-003',
     prompt: `${basePromptPrefix}${req.body.userInput}\n`,
     temperature: 0.75,
-    max_tokens: 1200,
+    max_tokens: 1500,
   });
   
   const basePromptOutput = baseCompletion.data.choices.pop();

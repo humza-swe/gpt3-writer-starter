@@ -32,20 +32,20 @@ const callGenerateEndpoint = async () => {
       setUserInput(event.target.value);
   };
 
-  const placeHolderValue = "Describe your radiation safety situation here."
+  const placeHolderValue = "How is your pet doing? Please list any symptoms and descriptions here. Include your pet's species, breed, age, weight, and any relevant history."
   return (
     <div className="root">
       <Head>
-        <title>Radiation Safety Assistant</title>
+        <title>AI Veterinarian</title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Radiation Safety Assistant</h1>
+            <h1>Your veterinary AI diagnosis tool</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Enter your radiation safety situation details below and the RSO's AI Assistant will help. </h2>
-            <h3>Disclaimer: This is a fictional tool developed for BP8107 (W2023). This tool is meant to be for informational purposes only.</h3>
+            <h2>Enter your pet's situation below. Be as descriptive as possible and let AI work its magic. </h2>
+            <h3>Disclaimer: This tool is meant to be for informational purposes only.</h3>
           </div>
         </div>
 
@@ -65,7 +65,7 @@ const callGenerateEndpoint = async () => {
     onClick={callGenerateEndpoint}
   >
     <div className="generate">
-    {isGenerating ? <span class="loader"></span> : <p>Assist</p>}
+    {isGenerating ? <span class="loader"></span> : <p>Diagnose</p>}
     </div>
   </a>
 </div>
