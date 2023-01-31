@@ -32,7 +32,8 @@ const callGenerateEndpoint = async () => {
       setUserInput(event.target.value);
   };
 
-  const placeHolderValue = "How is your pet doing? Please list any symptoms and descriptions here. Include your pet's species, breed, age, weight, and any relevant history."
+  const placeHolderValue = "Enter your pet's situation below. Be as descriptive as possible and let AI work its magic."
+
   return (
     <div className="root">
       <Head>
@@ -41,11 +42,11 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>AI Veterinarian</h1>
+            <h1>AIvet</h1>
           </div>
           <div className="header-subtitle">
-            <h3>Enter your pet's situation below. Be as descriptive as possible and let AI work its magic. </h3>
-            <h2>Disclaimer: This tool is meant to be for informational purposes only.</h2>
+          <h2>Disclaimer: This tool is meant to be for informational purposes only.</h2>
+          <h3>How is your pet doing? Please list any symptoms and descriptions here. Include your pet's species, breed, age, weight, and any relevant history.</h3>
           </div>
         </div>
 
@@ -78,7 +79,7 @@ const callGenerateEndpoint = async () => {
       </div>
     </div>
     <div className="output-content">
-      <h2><p>{apiOutput}</p></h2>
+      <p style="text-align:right">{apiOutput}</p>
     </div>
   </div>
   )}
