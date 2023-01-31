@@ -42,7 +42,7 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Your AI Veterinarian</h1>
+            <h1>AI Veterinarian</h1>
           </div>
           <div className="header-subtitle">
           <h2>Disclaimer: This tool is meant to be for informational purposes only.</h2>
