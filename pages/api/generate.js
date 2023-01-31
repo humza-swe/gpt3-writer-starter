@@ -7,13 +7,17 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 const basePromptPrefix = 
 `
-Below, a user will enter the details about their pet animal's medical situation. Pretend that you are an experienced and skilled veterinarian. 
+Below, a user will enter the details about their pet animal's medical situation. 
 
-Create a detailed list of 5 possible issues that the pet could be experiencing. Include a likelihood factor as a percentage for each option. 
+Create a detailed list of 5 possible issues that the pet could be experiencing. 
 
-Rank the situation as severe, moderate, or low-risk. Also recommend whether or not the user should take their pet to the veterinarian.
+For each option, include its likelihood as a percentage and also rank it as severe, moderate, or low risk.
 
-At the end, also include a few relevant questions that the user should ask their pet's veterinarian. 
+At the end, recommend whether or not the pet owner should take the pet to the veterinarian and also include a few relevant questions that the user should ask their pet's veterinarian. 
+
+Finally, leave a cute hopeful message for the pet owner about their pet that will make them smile.
+
+Pretend that you are an experienced and skilled veterinarian. Be verbose, and write in the style of Paul Graham.
 
 `
 
@@ -25,7 +29,7 @@ const generateAction = async (req, res) => {
   const baseCompletion = await openai.createCompletion({
     model: 'text-davinci-003',
     prompt: `${basePromptPrefix}${req.body.userInput}\n`,
-    temperature: 0.75,
+    temperature: 0.8,
     max_tokens: 1500,
   });
   

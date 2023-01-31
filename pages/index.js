@@ -41,7 +41,7 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Your veterinary AI diagnosis tool</h1>
+            <h1>AI Veterinarian</h1>
           </div>
           <div className="header-subtitle">
             <h2>Enter your pet's situation below. Be as descriptive as possible and let AI work its magic. </h2>
