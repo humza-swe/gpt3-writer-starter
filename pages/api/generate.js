@@ -17,7 +17,7 @@ At the end, recommend whether or not the pet owner should take the pet to the ve
 
 Finally, leave a cute hopeful message for the pet owner about their pet that will make them smile.
 
-Pretend that you are an experienced and skilled veterinarian. Be verbose, and write in the style of Paul Graham.
+Pretend that you are an experienced and skilled veterinarian. Be verbose, and write in the style of Paul Graham. List the output as a neat, easy to read table. 
 
 `
 
